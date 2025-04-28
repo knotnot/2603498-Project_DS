@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d4fc79, #d0ecd4); /* เขียวพาสเทลอ่อนหวาน */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 60px; /* ปรับขนาดปุ่ม */
+    font-size: 36px;     /* ทำให้ตัวหนังสือใหญ่ขึ้น */
+    font-weight: bold;   /* ตัวหนา */
+    border: none;
+    margin-right: 10px; /* ระยะห่างระหว่างปุ่ม */
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+   /* margin-bottom: 10px;*/
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #A5D6A7; /* กรอบสีเขียวอ่อน */
+    border-radius: 12px; /* ขอบมน */
+    background-color: #E8F5E9; /* สีพื้นหลังอ่อนๆ */
+}
+
+/* สไตล์สำหรับ input field */
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* เพื่อให้ padding รวมอยู่ในการคำนวณขนาด */
+}
+
+/* สไตล์สำหรับปุ่ม submit */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* เปลี่ยนสีเมื่อ hover ปุ่ม submit */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* สไตล์สำหรับ form */
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

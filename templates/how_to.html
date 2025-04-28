@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีใช้งานแอป</title>
+    <style>
+        body {
+            font-family: "Sarabun", sans-serif;
+            background-color: #f4fff4;
+            padding: 20px;
+            color: #2f4f2f;
+        }
+
+        h1 {
+            color: #2d862d;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            font-size: 18px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>วิธีใช้งานแอปทำนายความเหมาะสมของดิน</h1>
+    <p>กรุณากรอกค่าข้อมูลแร่ธาตุในดินของคุณ โดยใส่ค่าต่าง ๆ ดังต่อไปนี้:</p>
+
+    <ul>
+        <li><strong>pH:</strong> ค่าความเป็นกรด-ด่างของดิน (ไม่มีหน่วย)</li>
+        <li><strong>K:</strong> ปริมาณโพแทสเซียม (K) ในดิน (หน่วย: mg/kg หรือ ppm)</li>
+        <li><strong>P:</strong> ปริมาณฟอสฟอรัส (P) ในดิน (หน่วย: mg/kg หรือ ppm)</li>
+        <li><strong>N:</strong> ปริมาณไนโตรเจน (N) ในดิน (หน่วย: mg/kg หรือ ppm)</li>
+        <li><strong>Zn:</strong> ปริมาณสังกะสี (Zn) ในดิน (หน่วย: mg/kg หรือ ppm)</li>
+        <li><strong>S:</strong> ปริมาณกำมะถัน (S) ในดิน (หน่วย: mg/kg หรือ ppm)</li>
+    </ul>
+
+    <p>หลังจากกรอกข้อมูลครบแล้ว ให้เลือกภาคที่คุณทำการเกษตร จากนั้นคลิกปุ่ม “Submit” เพื่อให้ระบบวิเคราะห์ข้อมูลและแนะนำพืชที่เหมาะสม รวมถึงแนะนำวิธีปรับปรุงดินถ้าจำเป็น</p>
+
+    <a href="/" class="back-btn">กลับหน้าแรก</a>
+</body>
+</html>

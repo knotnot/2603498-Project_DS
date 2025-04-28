@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Soil Data</title>
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="container">กรุณากรอกข้อมูลแร่ธาตุในดินของคุณ</h1>
+    <form method="POST" action="/start" class="container">
+
+        <label for="target"> ต้องการที่จะปลูก </label>
+        <select id="target" name="target" required>
+            <option value="">(เลือกพืชที่ต้องการปลูก)</option>
+            <option value=10>Teff</option>
+            <option value=11>Wheat</option>
+            <option value=0>Barley</option>
+            <option value=1>Bean</option>
+            <option value=7>Potato</option>
+            <option value=8>Red pepper</option>
+        </select><br><br>
+
+        <label for="mineral1">Ph: </label>
+        <input type="number" id="mineral1" name="mineral1" step="any" required><br><br>
+        
+        <label for="mineral2">K (mg/kg): </label>
+        <input type="number" id="mineral2" name="mineral2" step="any" required><br><br>
+
+        <label for="mineral3">P (mg/kg): </label>
+        <input type="number" id="mineral3" name="mineral3" step="any" required><br><br>
+
+        <label for="mineral4">N (mg/kg): </label>
+        <input type="number" id="mineral4" name="mineral4" step="any" required><br><br>
+
+        <label for="mineral5">Zn (mg/kg): </label>
+        <input type="number" id="mineral5" name="mineral5" step="any" required><br><br>
+
+        <label for="mineral6">S (mg/kg): </label>
+        <input type="number" id="mineral6" name="mineral6" step="any" required><br><br>
+
+        <label for="province">ปลูกที่ภาค: </label>
+        <select id="province" name="province" required>
+            <option value="">(เลือกภาค)</option>
+            <option value="north">ภาคเหนือ</option>
+            <option value="south">ภาคใต้</option>
+            <option value="east">ภาคตะวันออก</option>
+            <option value="west">ภาคตะวันตก</option>
+            <option value="central">ภาคกลาง</option>
+            <option value="northeast">ภาคอีสาน</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

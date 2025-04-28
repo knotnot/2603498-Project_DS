@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>ผลการทำนาย</title>
+</head>
+<body class="container">
+    <h1>จากข้อมูลของคุณ</h1>
+    <p>{{ result }}</p>
+    <p>พืชที่คุณต้องการจะปลูกคือ</p>
+    <p>{{ target_crop }}</p>
+    <p> ซึ่งคุณควรเติมปุ๋ย xxx yyy zzz</p>
+    <a href="/" class="btn">กลับสู่หน้าแรก</a>
+</body>
+</html>
